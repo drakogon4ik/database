@@ -5,8 +5,6 @@ fail_reading = "failed to read data, key was lost or access is blocked"
 #creating database
 flag = False
 db = DataBase(flag)
-db.set_value(1, 1)
-db.delete_value(1)
 
 
 def set_value(key, value):
