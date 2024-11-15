@@ -1,3 +1,18 @@
+"""
+Author: Oleg Shkolnik יב9.
+Description: there are three simple functions in this program that use class database to manipulate with data and see results;
+             working of functions is checked by some tests for threading database:
+
+                first - sets and gets data;
+
+                second and third - create some threads for readers and writers and
+                                   check if they can work together and save the data correct;
+
+                final - creates 99 reading threads and writing threading,
+                        starts all the threads and checks if in the end data will be saved correct.
+Date: 15/11/24
+"""
+
 from database import *
 
 
