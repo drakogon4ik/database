@@ -1,3 +1,16 @@
+"""
+Author: Oleg Shkolnik יב9.
+Description: there are three classes for database in this program:
+                first creates dictionary and has basic operations with it: set, get and delete value;
+                
+                second works with pickle, saving data in pkl file: loads and dumps data to/from this file;
+                
+                third receives instruction if it needs too work with treads or processes and then
+                creates semaphores and locks that allow working for limited number of users:
+                10 readers at the same time, one writer at the same time without any readers.
+Date: 15/11/24
+"""
+
 import pickle
 import multiprocessing
 import threading
