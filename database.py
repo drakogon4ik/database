@@ -187,25 +187,25 @@ if __name__ == '__main__':
     password = 1
 
     test_db1 = BasicDataBase()
-    assert test_db1.set_value(login, password) == True
+    assert test_db1.set_value(login, password)
     assert test_db1.get_value(login) == password
     test_db1.delete_value(login)
     assert test_db1.get_value(login) != password
 
     test_db2 = PickleBase()
-    assert test_db2.set_value(login, password) == True
+    assert test_db2.set_value(login, password)
     assert test_db2.get_value(login) == password
     test_db2.delete_value(login)
     assert test_db2.get_value(login) != password
 
     test_db3 = DataBase()
-    assert test_db3.set_value(login, password) == True
+    assert test_db3.set_value(login, password)
     assert test_db3.get_value(login) == password
     test_db3.delete_value(login)
     assert test_db3.get_value(login) != password
 
     test_db4 = DataBase(False)
-    assert test_db4.set_value(login, password) == True
+    assert test_db4.set_value(login, password)
     assert test_db4.get_value(login) == password
     test_db4.delete_value(login)
     assert test_db4.get_value(login) != password
